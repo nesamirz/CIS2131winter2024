@@ -1,30 +1,10 @@
-length = float(input("Enter the length of the fenced area: "))
-width = float(input("Enter the width of the fenced area: "))
-post_distance = float(input("Enter the distance between posts: "))
+import random
 
-if (length % post_distance != 0) or (width % post_distance != 0) or (post_distance <= 0):
-    print("Error: Invalid input.")
-else:
-    perimeter = 2 * (length + width)
-    num_posts = int(perimeter / post_distance)
+for i in range(1):
+    x = random.randint(1,114)
+    print(x)
+import random
 
-    board_length = float(input("Enter the length of the boards: "))
-
-    if board_length < post_distance:
-        print("Error: Invalid input.")
-    else:
-        num_boards_single = int(length / board_length)
-        boards_per_post = int(input("Enter the number of boards to run across each post: "))
-        post_cost = float(input("Enter the cost of each post: "))
-        board_cost = float(input("Enter the cost of each board: "))
-
-        total_post_cost = num_posts * post_cost
-        total_board_cost = num_boards_single * boards_per_post * board_cost
-        grand_total = total_post_cost + total_board_cost
-
-        print("\nResults:")
-        print(f"Total number of posts required: {num_posts}")
-        print(f"Total number of boards required: {num_boards_single * boards_per_post}")
-        print(f"Total cost of posts: ${total_post_cost}")
-        print(f"Total cost of boards: ${total_board_cost}")
-        print(f"Grand total for the project: ${grand_total}")
+for i in range(1):
+    x = random.randint(1,10)
+    print(x)
